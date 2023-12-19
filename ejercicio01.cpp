@@ -3,7 +3,7 @@
 
 int main(int argc, char** argv){
 
-    mpi_init(&argc,&argv);
+    MPI_Init(&argc,&argv);
 
     int rank, nprocs;
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
